@@ -1,93 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title> Shreya Healthcare </title>
-	
-	<link href="css/style.css" type="text/css" rel="stylesheet">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Shreya Healthcare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-	
-	<div class="top">
-		<div>
-		 Contact Us +91 7080888854 | Shreyahealthcare@gmail.com 
-		</div>
-	</div>
-	
-	<div class="logo">
-		<div>
-			<table>
-				<tr>
-					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> Shreya  </font><font color="#000"> Healthcare</font> </td>
-					<td> <br> <br>
-						<font size="4px"> 
-							<a href="index.html">HOME</a> 
-							<a href="about.html">ABOUT US</a>  
-							<a href="service.html">SERVICE</a>
-							<a href="doctor.html">DOCTORS</a> 
-							<a href="contact.html">CONTACT US</a>
-						</font>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	
-	
-	
-	<div class="bottom">
-		<div>
-			<table border="0">
-				<tr>
-					<td width="700px">
-						<font color="#000"> Welcome to <mark>Shreya Healthcare</mark> </font> <br> <br>
+    <div id="loader"><div class="spinner"></div></div>
 
-					<font color="#000" size="6px"> Health care Needs to Our Patients </font> <br> <br>
+    <nav>
+        <a href="index.html" class="logo"><i class="fas fa-plus-square"></i> Shreya Healthcare</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Medicines</a></li>
+            <li><a href="about.html" style="color: var(--primary);">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fas fa-moon" id="theme-toggle"></i>
+            <a href="cart.html" style="color:inherit; text-decoration:none;">
+                <i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </nav>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros amet sollicitudin interdum. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br><br>
+    <section style="background: var(--secondary); color: white; padding: 60px 5%; text-align: center;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Caring for Your Health Since 2010</h1>
+        <p style="opacity: 0.8; max-width: 700px; margin: 0 auto;">Shreya Healthcare started with a simple mission: to make authentic healthcare affordable and accessible to every household.</p>
+    </section>
 
-Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. <br><br>
+    <div class="container">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center; margin-bottom: 50px;">
+            <img src="https://images.unsplash.com/photo-1586770116050-ea0e174a338c?w=600" alt="Pharmacy Interior" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <div style="padding: 20px;">
+                <h2 style="color: var(--primary); margin-bottom: 15px;">Our Story</h2>
+                <p>What began as a small local pharmacy has grown into a trusted digital healthcare partner. We understand that behind every order is a person seeking wellness, and we take that responsibility seriously.</p>
+                <br>
+                <p>We work directly with certified manufacturers and licensed pharmacists to ensure that every pill, syrup, or device you receive is 100% genuine and stored in temperature-controlled environments.</p>
+            </div>
+        </div>
 
-<br>
- </td>
-					
-					
-					<td style="padding-left:20px;"> <img src="img/about.jpg" width="400px"></td>
-				</tr>
-			
-				
-			</table>
-		</div>
-	</div>
-	
-	<div class="bottom">
-		<div>
-			<table border="0">
-				<tr>
-					<td width="700px">
-						<font color="#000">Address </font> <br> <br>
+        <h2 style="text-align: center; margin-bottom: 30px;">Why Choose Us?</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-certificate" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;"></i>
+                <h3>Certified Quality</h3>
+                <p>All our products are FDA approved and sourced from verified distributors.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-truck" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;"></i>
+                <h3>Express Delivery</h3>
+                <p>Equipped with a cold-chain supply to deliver sensitive medicines safely.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-shield" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;"></i>
+                <h3>Privacy First</h3>
+                <p>Your medical history and prescriptions are stored with military-grade encryption.</p>
+            </div>
+        </div>
+    </div>
 
-					<font color="#000" size="6px"> Shreya Healthcare</font> <br> <br>
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: left;">
+            <div>
+                <h3>Shreya Healthcare</h3>
+                <p style="opacity: 0.7; margin-top: 10px;">Your health is our only priority. Available 24/7 for your needs.</p>
+            </div>
+            <div>
+                <h4>Helpful Links</h4>
+                <ul style="list-style: none; margin-top: 10px; line-height: 2;">
+                    <li><a href="products.html" style="color: white; opacity: 0.7; text-decoration: none;">Browse Medicines</a></li>
+                    <li><a href="contact.html" style="color: white; opacity: 0.7; text-decoration: none;">Track Order</a></li>
+                    <li><a href="#" style="color: white; opacity: 0.7; text-decoration: none;">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div style="display: flex; gap: 15px; margin-top: 10px; font-size: 1.2rem;">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; opacity: 0.5;">&copy; 2026 Shreya Healthcare. All Rights Reserved.</p>
+    </footer>
 
-Near Gyanoday Vidya Mandir ,<br>
-Moh Dabgran <br> Jalaun, 285123 <br> Contact No - 0000000000 <br> Email: Shreyahealthcare@gmail.com<br><br>
-
-
-<br>
- </td>
-					
-					
-					<td style="padding-left:20px;"> </td>
-				</tr>
-			
-				
-			</table>
-		</div>
-	</div>
-	
-	
-	<div class="nav_down">
-		<div>
-		 &copy; Shreya Healthcare, site designed & developed by <a href="https://www.facebook.com/kartik2233">Kartikey Shrivastava</a> 
-		</div>
-	</div>
-	
+    <script src="js/main.js"></script>
+</body>
+</html>

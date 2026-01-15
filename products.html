@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicines | Shreya Healthcare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader"><div class="spinner"></div></div>
+    
+    <nav>
+        <a href="index.html" class="logo">Shreya Healthcare</a>
+        <div class="nav-icons">
+            <a href="cart.html" style="color:inherit; text-decoration:none;"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 style="margin-bottom:20px;">Shop Medicines</h2>
+        
+        <div style="margin-bottom:30px; display:flex; gap:15px; flex-wrap:wrap; align-items:center;">
+            <button class="btn" onclick="displayProducts('All')">All</button>
+            <button class="btn" onclick="displayProducts('Tablets')">Tablets</button>
+            <button class="btn" onclick="displayProducts('Syrups')">Syrups</button>
+            <button class="btn" onclick="displayProducts('Medical Devices')">Devices</button>
+            <input type="text" id="pSearch" placeholder="Search items..." style="padding:10px; border:1px solid #ccc; border-radius:5px; flex:1;" onkeyup="displayProducts('All', this.value)">
+        </div>
+
+        <div id="product-grid" class="grid"></div>
+    </div>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

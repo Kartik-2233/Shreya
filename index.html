@@ -1,134 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title> Shreya Healthcare  </title>
-	
-	<link href="css/style.css" type="text/css" rel="stylesheet">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Healthcare | Online Pharmacy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-	
-	<div class="top">
-		<div>
-			Contact Us +91 7080888854 | Shreyahealthcare@gmail.com 
-		</div>
-	</div>
-	
-	<div class="logo">
-		<div>
-			<table>
-				<tr>
-					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> Shreya </font><font color="#000"> Healthcare</font> </td>
-					<td> <br> <br>
-						<font size="4px"> 
-							<a href="index.html">HOME</a> 
-							<a href="about.html">ABOUT US</a>  
-							<a href="service.html">SERVICE</a>
-							<a href="doctor.html">DOCTORS</a> 
-							<a href="contact.html">CONTACT US</a>
-						</font>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	
-	<div class="middle">
-		<div style="background-image:url('img/a.jpg');">
-		<p>
-			<br> <br>
-					Health Care Services  <br>
-			<font size="5px"> We Care About Your Health </font>
-		</p> 
-		</div>
-	</div>
-	
-	<div class="bottom">
-		<div>
-			<table border="0">
-				<tr>
-					<td width="700px">
-						<font color="#000"> We are medical center </font> <br> <br>
+    <div id="loader"><div class="spinner"></div></div>
 
-					<font color="#000" size="5px"> We Have Medicare Plan Options for You! </font> <br> <br>
+    <nav>
+        <a href="index.html" class="logo"><i class="fas fa-plus-square"></i> Shreya Healthcare</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Medicines</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fas fa-moon" id="theme-toggle"></i>
+            <a href="cart.html" style="color:inherit; text-decoration:none;">
+                <i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </nav>
 
-Phasellus pretium orci sit amet mi ullamcorper egestas. Sed non mattis metus. Integer vel lorem tincidunt, pharetra eros nec, posuere odio. Nullam eget bibendum sem, venenatis lacinia justo. Duis aliquet lobortis neque, eget volutpat nulla iaculis a. <br><br>
+    <header class="hero">
+        <h1>Authentic Medicines, Delivered Fast</h1>
+        <p>Save up to 20% on your first order.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search medicines (e.g. Paracetamol)..." id="homeSearch">
+            <button onclick="window.location.href='products.html'"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
 
-In hac habitasse platea dictumst. Praesent condimentum justo justo, at ultricies diam accumsan vitae. Donec ac elementum diam. Ut quam orci, posuere quis lacus sed, vehicula rhoncus massa. Nunc volutpat nibh nulla, tincidunt egestas tellus faucibus nec. <br><br>
-<ul>
-<li> Nulla venenatis auctor quam, ac porta lectus dictum in
-<li>Aliquam sodales nisi sit amet lorem
-<li>Suspendisse vulputate tellus in justo convallis imperdiet
-<li>Morbi id lorem consequat, sodales mi non
-<li>Nulla venenatis auctor quam, ac porta lectus dictum in
-</ul>
-<br>
- </td>
-					
-					
-					<td> </td>
-				</tr>
-			
-				
-			</table>
-		</div>
-	</div>
-	
-	<div class="bottom_up">
-		<div>
-				Make an Appointment
-				
-				<table>
-										
-					<tr>
-						<td width="500px"> </td>
-						<td>	<input type="text" placeholder="First Name">
-						<td> 	<input type="text" placeholder="Last Name">
-					</tr>
-					<tr height="30px">
-						
-					</tr>
-					<tr>
-						<td width="500px"> </td>
-						<td>	<input type="text" placeholder="Email Id">
-						<td> 	<input type="text" placeholder="Mobile No">
-					</tr>
-					
-					<tr height="30px">
-						
-					</tr>
-					<tr>
-						<td width="500px"> </td>
-						<td>	<select> <option> -- Sex -- </option> <option> Male </option> <option> Female </option> </select>
-						<td> 	<input type="text" placeholder="appointment date">
-					</tr>
-					
-						<tr height="30px">
-						
-					</tr>
-					<tr>
-						<td width="500px"> </td>
-						<td colspan="2">	<textarea placeholder="Message"> </textarea>
-					</tr>
-					
-						<tr height="30px">
-						
-					</tr>
-					<tr>
-						<td width="500px"> </td>
-						<td colspan="2">	<button> SUBMIT </button>
-					</tr>
-				</table>
-				
-		</div>
-	</div>
-	
-	
-	
-	
-	
-	<div class="nav_down">
-		<div>
-		 &copy; Shreya Healthcare, site designed & developed by <a href="https://www.facebook.com/kartik2233">Kartikey Shrivastava</a>
-		</div>
-	</div>
-	
+    <div class="container">
+        <div style="background: #e1f5fe; padding: 25px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+            <div>
+                <h2 style="color:var(--secondary)">Upload Your Prescription</h2>
+                <p>Order easily by uploading your doctor's note.</p>
+            </div>
+            <button class="btn" style="padding: 15px 30px;">Upload Now</button>
+        </div>
+
+        <h2 style="margin-bottom: 25px;">Featured Categories</h2>
+        <div class="grid">
+            <div class="card" onclick="location.href='products.html'" style="cursor:pointer">
+                <i class="fas fa-capsules" style="font-size: 3rem; color: var(--primary);"></i>
+                <h3>Tablets</h3>
+            </div>
+            <div class="card" onclick="location.href='products.html'" style="cursor:pointer">
+                <i class="fas fa-vial" style="font-size: 3rem; color: var(--primary);"></i>
+                <h3>Syrups</h3>
+            </div>
+            <div class="card" onclick="location.href='products.html'" style="cursor:pointer">
+                <i class="fas fa-stethoscope" style="font-size: 3rem; color: var(--primary);"></i>
+                <h3>Medical Devices</h3>
+            </div>
+            <div class="card" onclick="location.href='products.html'" style="cursor:pointer">
+                <i class="fas fa-baby" style="font-size: 3rem; color: var(--primary);"></i>
+                <h3>Baby Care</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Shreya Healthcare. Verified Online Pharmacy.</p>
+        <div style="margin-top: 15px; font-size: 1.2rem; display: flex; justify-content: center; gap: 20px;">
+            <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-whatsapp"></i>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

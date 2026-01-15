@@ -1,80 +1,78 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title> Shreya Healthcare  </title>
-	
-	<link href="css/style.css" type="text/css" rel="stylesheet">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Shreya Healthcare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-	
-	<div class="top">
-		<div>
-			Contact Us +91 7080888854 | Shreyahealthcare@gmail.com  
-		</div>
-	</div>
-	
-	<div class="logo">
-		<div>
-			<table>
-				<tr>
-					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> Shreya  </font><font color="#000"> Healthcare</font> </td>
-					<td> <br> <br>
-						<font size="4px"> 
-							<a href="index.html">HOME</a> 
-							<a href="about.html">ABOUT US</a>  
-							<a href="service.html">SERVICE</a>
-							<a href="doctor.html">DOCTORS</a> 
-							<a href="contact.html">CONTACT US</a>
-						</font>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	
-	
-	
-	
-	
-	<div class="bottom">
-		<div>
-			<table border="0">
-				<tr>
-					<td width="700px">
-						<font color="#000">------------ </font> <br> <br>
+    <div id="loader"><div class="spinner"></div></div>
+    
+    <nav>
+        <a href="index.html" class="logo">Shreya Healthcare</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Medicines</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-					<font color="#000" size="6px"> CONTACT US </font> <br> <br>
+    <div class="container">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div style="padding:20px;">
+                <h1>Get in Touch</h1>
+                <p style="margin: 20px 0; color: var(--gray);">Have questions about your prescription or delivery? Our team is here to help you 24/7.</p>
+                
+                <div style="display:flex; align-items:center; gap:15px; margin-bottom:20px;">
+                    <i class="fas fa-phone-alt" style="color:var(--primary); font-size:1.5rem;"></i>
+                    <div>
+                        <strong>Call Us</strong>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
 
-					Shreya Healthcare
-					
-					<br>
-					<br>
-					
-					Mob : +91 7080888854
-					
-					<br>
-					<br>
-					
-					Email : Shreyahealthcare@gmail.com
+                <div style="display:flex; align-items:center; gap:15px; margin-bottom:20px;">
+                    <i class="fas fa-envelope" style="color:var(--primary); font-size:1.5rem;"></i>
+                    <div>
+                        <strong>Email Us</strong>
+                        <p>support@shreyahealthcare.com</p>
+                    </div>
+                </div>
 
-<br>
-<br>
-<br>
- </td>
-					
-					
-					<td style="padding-left:20px;"> </td>
-				</tr>
-			
-				
-			</table>
-		</div>
-	</div>
-	
-	
-	<div class="nav_down">
-		<div>
-		 &copy; Shreya Healthcare, site designed & developed by <a href="https://www.facebook.com/kartik2233">Kartikey Shrivastava</a>
-		</div>
-	</div>
-	
+                <div style="display:flex; align-items:center; gap:15px;">
+                    <i class="fas fa-map-marker-alt" style="color:var(--primary); font-size:1.5rem;"></i>
+                    <div>
+                        <strong>Location</strong>
+                        <p>123 Medical Square, Healthcare City, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required style="width:100%; padding:12px; margin-bottom:15px; border:1px solid #ddd; border-radius:5px;">
+                    <input type="email" id="contactEmail" placeholder="Your Email" required style="width:100%; padding:12px; margin-bottom:15px; border:1px solid #ddd; border-radius:5px;">
+                    <textarea placeholder="How can we help you?" rows="5" required style="width:100%; padding:12px; margin-bottom:15px; border:1px solid #ddd; border-radius:5px;"></textarea>
+                    <button type="submit" class="btn" style="width:100%; padding:12px;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('contactEmail').value;
+            if(!email.includes('@')) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+            alert("Message Sent! We will get back to you within 24 hours.");
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
